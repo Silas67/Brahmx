@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff;
+  --foreground: #000;
 }
 
 @theme inline {
@@ -14,13 +14,37 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fff;
+    --foreground: #000;
   }
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url(/fonts/Satoshi-Variable.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zodiak";
+  src: url(/fonts/TTF/Zodiak-Variable.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Satoshi", sans-serif;
+}
+
+.heading {
+  font-family: "Zodiak", sans-serif;
+}
+
+.flexcent {
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }

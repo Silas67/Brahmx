@@ -58,7 +58,7 @@ const MouseMove = () => {
   return (
     <div
       ref={followerRef}
-      className="fixed w-4 h-4 top-0 left-0 pointer-events-none z-50 border border-black rounded-full flex items-center justify-center transition-all duration-[0.05s] "
+      className="fixed w-4 h-4 top-0 left-0 pointer-events-none z-50 border border-black rounded-full lg:flex items-center justify-center transition-all duration-[0.05s] hidden"
     ></div>
   );
 };

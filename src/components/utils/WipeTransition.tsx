@@ -12,20 +12,31 @@ const WipeTransition = () => {
     "/images/floating_8.jpg",
     "/images/floating_2.jpg",
     "/images/floating_3.jpg",
+    "/images/floating_6.jpg",
   ];
 
   useGSAP(() => {
     const tl = gsap.timeline();
+    tl.set(".container", { scale: 0 });
+
+    tl.fromTo(
+      ".container",
+      { scale: 0 },
+      { scale: 1, duration: 1, ease: "power2.inOut", delay: 2 }
+    );
+
     imageRefs.current.forEach((ref, index) => {
       if (!ref) return;
+
       tl.fromTo(
         ref,
-        { clipPath: "inset(100% 0% 100% 0%)" },
+        { clipPath: "inset(100% 0% 0% 0%)" },
         {
           clipPath: "inset(0% 0% 0% 0%)",
           duration: 1.5,
           ease: "power2.inOut",
-          delay: 1.5,
+          delay: 2,
+          stagger: index * 0.5,
         },
         index * 1
       );
@@ -58,7 +69,7 @@ const WipeTransition = () => {
   }, []);
 
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative container">
       {images.map((src, idx) => (
         <div
           key={idx}
