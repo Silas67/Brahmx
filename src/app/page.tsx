@@ -10,6 +10,9 @@ import Expertise from "@/components/section/Expertise";
 import Projects from "@/components/section/Projects";
 import Awards from "@/components/section/Awards";
 import About from "@/components/section/About";
+import Testimonials from "@/components/section/Testimonials";
+import CalltoAction from "@/components/section/CalltoAction";
+import Footer from "@/components/common/Footer";
 
 export default function Home() {
   useLenis();
@@ -54,6 +57,13 @@ export default function Home() {
           <section>
             <About />
           </section>
+          <section>
+            <Testimonials />
+          </section>
+          <section>
+            <CalltoAction />
+          </section>
+          <Footer />
         </main>
       )}
     </>

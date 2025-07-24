@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
 
         <div className="flex items-end justify-between gap-12 w-full max-sm:flex-col-reverse max-sm:items-start max-sm:gap-4">
-          <div className="text-[9vw] lg:h-[25vh] uppercase leading-tight heading font-black">
+          <div className="text-[8vw] lg:h-[23vh] uppercase leading-tight heading font-black">
             Abram.Design
           </div>
           <div className="lg:w-[200px] lg:h-[250px] lg:mb-[20px] md:mb-[16px] md:w-[100px] md:h-[150px] w-[200px] h-[200px]">

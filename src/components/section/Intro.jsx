@@ -32,7 +32,7 @@ const Loader = () => {
     }); //Translates as exit
   });
   return (
-    <div className="w-full bg-white relative h-screen flex items-center justify-center flex-col">
+    <div className="w-full bg-white relative h-[100vh] flex items-center justify-center flex-col">
       <div className="group flex items-center justify-center overflow-hidden gap-8 text-black uppercase text-4xl flex-col max-sm:text-2xl max-sm:scale-[0.5]">
         <div className="overflow-hidden max-h-[100px] text1 opacity-0 ">
           <Reveal className=" font-bold">Abram.</Reveal>
