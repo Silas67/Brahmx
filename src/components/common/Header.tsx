@@ -8,8 +8,8 @@ export const navbar = [
 ];
 const Header = () => {
   return (
-    <div className="w-full absolute top-0 left-0 h-[10vh] font-bold  flex items-center justify-between px-[30px] py-[20px] text-sm z-50 heading">
-      <div className="uppercase">
+    <div className="w-full absolute top-0 left-0 h-[10vh] font-bold  flex items-center justify-between px-[30px] py-[20px] text-sm z-50 ">
+      <div className="uppercase heading">
         <h1 className=" ">Abram.</h1>
       </div>
 

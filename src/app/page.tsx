@@ -4,6 +4,7 @@ import Hero from "@/components/section/Hero";
 import Reel from "@/components/section/video";
 import Header from "@/components/common/Header";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Manifesto from "@/components/section/Manifesto";
 import useLenis from "@/hooks/useLenis";
 import Expertise from "@/components/section/Expertise";
@@ -30,7 +31,11 @@ export default function Home() {
       {isIntroVisible ? (
         <Intro />
       ) : (
-        <main
+        <motion.main
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "anticipate" }}
           className={`lg:w-full sm:w-[100vw] overflow-hidden grid relative opactiy-0 ${
             isIntroVisible
               ? "opacity-0 transition-all duration-500"
@@ -64,7 +69,7 @@ export default function Home() {
             <CalltoAction />
           </section>
           <Footer />
-        </main>
+        </motion.main>
       )}
     </>
   );

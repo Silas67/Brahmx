@@ -40,7 +40,7 @@ const Expertise = () => {
   return (
     <div className="w-[100vw] flex justify-center items-center text-center flex-col relative py-24 max-sm:px-[15px]">
       <div className="text-center md:flex items-center justify-center flex-col relative gap-12 max-sm:hidden ">
-        <p className="text-neutral-500 ">Expertise</p>
+        <p className="text-muted ">Expertise</p>
         <div className="text-center flex flex-col items-center justify-center">
           {" "}
           <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group">
