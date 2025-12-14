@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "../utils/Menu";
 
 export const navbar = [
   { label: "Services", href: "/" },
@@ -21,7 +22,9 @@ const Header = () => {
             </div>
           ))}
         </nav>
-        <div className="lg:hidden">Menu</div>
+        <div className="lg:hidden">
+          <Menu />
+        </div>
       </div>
     </div>
   );
