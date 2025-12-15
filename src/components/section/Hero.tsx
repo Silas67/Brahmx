@@ -1,9 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[100vh] relative flexcent px-[30px]">
+    <motion.div
+      initial={{ filter: "blur(8px)" }}
+      whileInView={{ filter: "blur(0px)" }}
+      viewport={{ once: false }}
+      transition={{ duration: 1.5, ease: "anticipate" }}
+      className="w-full h-[100vh] relative flexcent px-[30px]"
+    >
       <div className=" absolute top-[100px] text-[16px] max-sm:w-[80vw] ">
         <h1 className="text-left uppercase font-bold max-sm:text-center">
           A tailor-made approach to branding,
@@ -33,7 +40,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

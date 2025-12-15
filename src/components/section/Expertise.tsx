@@ -43,7 +43,7 @@ const Expertise = () => {
         <p className="text-muted ">Expertise</p>
         <div className="text-center flex flex-col items-center justify-center">
           {" "}
-          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group">
+          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group filter blur-[2px] hover:blur-[0px]">
             <span>STRATÉGIE DE </span>
             <ImageCon
               src={"/images/floating_1.jpg"}
@@ -51,28 +51,28 @@ const Expertise = () => {
             />
             <span>MARQUE</span>
           </div>
-          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group">
+          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group filter blur-[2px] hover:blur-[0px]">
             <ImageCon
               src={"/images/floating_2.jpg"}
               className="group-hover:rotate-12 group-hover:scale-110 transition-all duration-500"
             />
             <span>IDENTITÉ VISUELLE</span>
           </div>
-          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group">
+          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group filter blur-[2px] hover:blur-[0px]">
             <ImageCon
               src={"/images/floating_3.jpg"}
               className="group-hover:rotate-12 group-hover:scale-110 transition-all duration-500"
             />
             SITE INTERNET
           </div>
-          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group">
+          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group filter blur-[2px] hover:blur-[0px]">
             DIRECTION ARTISTIQUE
             <ImageCon
               src={"/images/floating_4.jpg"}
               className="group-hover:rotate-12 group-hover:scale-110 transition-all duration-500"
             />
           </div>
-          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group">
+          <div className="lg:text-[60px] sm:text-[40px] sm:leading-loose  font-bold uppercase lg:leading-tight text-neutral-400 hover:text-black transition-all duration-500 cursor-pointer flex items-center gap-4 group filter blur-[2px] hover:blur-[0px]">
             EVENT & COMMUNITY
             <ImageCon
               src={"/images/floating_5.jpg"}

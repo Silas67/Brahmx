@@ -6,10 +6,9 @@ const Awards = () => {
     <div className="w-[100vw] my-24 relative h-[99vh] overflow-hidden max-sm:hidden">
       <div className="absolute inset-0 w-full h-full -z-10">
         <Image
-          src={"/images/floating_8.jpg"}
+          src={"/images/Img2.jpg"}
           alt="/"
-          width={100}
-          height={100}
+          fill
           className="object-cover w-full h-full"
         />
       </div>

@@ -1,36 +1,54 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="w-[100vw] flex flex-col px-[30px] py-24 max-sm:px-[15px]">
-      <div className="w-full flex items-center justify-end">
+      <motion.div
+        initial={{ filter: "blur(2px)" }}
+        whileInView={{ filter: "blur(0px)" }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "anticipate" }}
+        className="w-full flex items-center justify-end"
+      >
         <h1 className="lg:max-w-1/2 text-3xl font-bold lg:px-4 md:hidden lg:flex">
           Je crois profondément que les idées les plus fortes naissent là où la
           créativité rencontre une vision forte. C’est là que le design devient
           un véritable moteur d’impact.
         </h1>
-      </div>
+      </motion.div>
       <div className="flex items-end justify-between mt-24 max-sm:flex-col md:flex-col lg:flex-row max-sm:gap-12">
         <div className="w-full flex lg:flex-col gap-12 md:flex-row max-sm:flex-col">
-          <div className=" md:w-[350px] flex justify-between text-sm">
+          <motion.div
+            initial={{ filter: "blur(2px)" }}
+            whileInView={{ filter: "blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "anticipate" }}
+            className=" md:w-[350px] flex justify-between text-sm"
+          >
             <p>À propos</p>
             <div>
               <p>La vision d&apos;une agence,</p>
               <p>La passion d&apos;une freelance.</p>
             </div>
-          </div>
-          <div className="md:w-[350px] h-[400px] overflow-hidden">
+          </motion.div>
+          <div className="relative md:w-[350px] h-[400px] overflow-hidden">
             <Image
               src={"/images/floating_3.jpg"}
               alt="/"
-              width={100}
-              height={100}
+              fill
               className="object-cover w-full h-full"
             />
           </div>
         </div>
-        <div className="w-full text-left lg:px-4">
+        <motion.div
+          initial={{ filter: "blur(2px)" }}
+          whileInView={{ filter: "blur(0px)" }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "anticipate" }}
+          className="w-full text-left lg:px-4"
+        >
           <div className="w-full md:flex items-center justify-end lg:hidden max-sm:hidden my-24">
             <h1 className="lg:max-w-1/2 text-3xl font-bold lg:px-4">
               Je crois profondément que les idées les plus fortes naissent là où
@@ -65,7 +83,7 @@ const About = () => {
               LIRE MON HISTOIRE
             </h1>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
